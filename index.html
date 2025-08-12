@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  검색엔진 최적화(SEO)를 위한 메타태그
+  메타요소는 HTML의 head 요소 안에 포함시킬 수 있음
+  일반적인 마크업과는 별개로 페이지에 관련된 정보를 지정하는 데 사용됨
+  검색엔진 최적화가 관련이 있음
+  -->
+  <meta name="keywords" content="오설록">
+  <meta name="description" content="차와 제주가 선사하는 가치 있는 쉼, 오설록">
+  <!-- 오픈그래프 open graph
+   콘텐츠의 요약 내용이 sns에 개시되는데 최적화된 데이터를 가지고 갈 수 있도록 설정하는 것
+   사용자가 클릭 하기 전에 크롤러가 해당 웹사이트를 방문하여
+   HTML의 head의 메타데이터를 크롤링하여 미리보기 화면을 생성해 준다
+   이미지의 경우 최소한 600*315픽셀은 되어야 하며,
+   1200*630 크기를 권장
+  -->
+   <meta property="og:title" content="라이프마인드">
+   <meta property="og:url" content="https://min-space.github.io/osulloc/index.html">
+   <meta property="og:image" content="images/common/og_img.jpg">
+   <meta property="og:type" content="website">
+   <meta property="og:description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
+  <title>Lifemind</title>
+  <!--파비콘-->
+  <link rel="icon" href="">
+  <!--폰트-->
+  <link rel="stylesheet" href="css/font.css">
+  <!--부트스트랩-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--css-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="wrap">
+    <header class="header head3">
+      <div class="inner">
+        <ul>
+          <li><h1><img src="images/home/home-logo.png" alt="logo"></h1></li>
+          <li class="head-util">
+            <p class="alert-badge"><img src="images/home/home-weather.png" alt="날씨"> 35° |<span> <i class="bi bi-geo-alt-fill"></i> 부산광역시 진구</span></p>
+          </li>
+        </ul>
+      </div><!--.inner-->
+      <section class="weather-alert">
+        <div>
+          <p>홍길동님 오늘은 폭염입니다.<br>
+          물을 자주 마시세요!</br></p>
+        </div>
+        <img src="images/home/home-man.png" alt="남성"/>
+      </section>
+    </header>
+
+    <div class="content-healthscore"><!--content-login-01 /이런식으로-->
+      <div class="inner">
+        <h2>이달의 건강점수</h2>
+        <a href="#">더보기</a>
+      </div><!--.inner-->
+
+      <div class="monthlyscore">
+        <div>
+          <p>7월 평균 점수</p> 
+          <div class="score"><img src="images/home/home-health score.png" alt="건강점수"></div> 
+          <span class="warning"><img src="images/home/home-caution.png" alt="표정">주의!</span>
+          <p class="desc">6월보다 심박수가 <span class="down">감소<i class="bi bi-arrow-down"></i></span> 했어요.</p>
+        </div>
+      <div class="stats">
+        <div>
+          <span class="Heart rate">7월 평균 심박</span>
+          <strong>88 <span>BPM</span></strong>
+        </div>
+        
+        <div>
+          <span class="respiration">7월 평균 호흡</span>
+          <strong>102 <span>RPM</span></strong>
+        </div>
+        <div>
+          <span class="fall from">7월 평균 낙상</span>
+          <strong>2<span>건</span></strong>
+        </div>
+      </div>
+
+       
+    </div><!--.cont-health score-->
+
+
+<!--푸터는 변경없음-->
+    
+  </div><!--#wrap-->
+</body>
+</html>

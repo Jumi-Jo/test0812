@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  검색엔진 최적화(SEO)를 위한 메타태그
+  메타요소는 HTML의 head 요소 안에 포함시킬 수 있음
+  일반적인 마크업과는 별개로 페이지에 관련된 정보를 지정하는 데 사용됨
+  검색엔진 최적화가 관련이 있음
+  -->
+  <meta name="keywords" content="라이프마인드">
+  <meta name="description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
+  <!-- 오픈그래프 open graph
+   콘텐츠의 요약 내용이 sns에 개시되는데 최적화된 데이터를 가지고 갈 수 있도록 설정하는 것
+   사용자가 클릭 하기 전에 크롤러가 해당 웹사이트를 방문하여
+   HTML의 head의 메타데이터를 크롤링하여 미리보기 화면을 생성해 준다
+   이미지의 경우 최소한 600*315픽셀은 되어야 하며,
+   1200*630 크기를 권장
+  -->
+   <meta property="og:title" content="라이프마인드">
+   <meta property="og:url" content="https://min-space.github.io/osulloc/index.html">
+   <meta property="og:image" content="images/common/og_img.jpg">
+   <meta property="og:type" content="website">
+   <meta property="og:description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
+  <title>복약등록</title>
+  <!--파비콘-->
+  <link rel="icon" href="../../images/favicon-life-mind.png">
+  <!--폰트-->
+  <link rel="stylesheet" href="../../css/font.css">
+  <!--부트스트랩-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--css-->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/aos.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/mapage.css">
+
+
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="../../js/aos.js"></script>
+  <script src="../../js/layout.js"></script>
+  <script src="../../js/mypage.js"></script>
+</head>
+<body>
+ <div id="wrap">
+    <header class="header head1">
+      <div class="inner">
+        <ul>
+          <li><a href="mypage09.html"><img src="../../images/arrow/tit-arrow.svg" alt="뒤로가기"></a></li>
+          <li><h1>복약등록</h1></li>
+        </ul>
+      </div><!--.inner-->
+    </header>
+
+
+    <div class="content-mypage-sub-02 registration">
+      <div class="inner">
+        <div class="field-area">
+          <form>
+            <fieldset class="field02">
+              <legend>인풋박스 아이콘 추가</legend>
+              <div class="input-icon">
+                <h2>복약명</h2>
+                <input type="text" placeholder="복약명을 입력해주세요.">
+                <span><img src="../../images/x_gray.svg" alt="아이콘"></span>
+              </div>
+            </fieldset>
+            <fieldset class="field02">
+              <legend>인풋박스 아이콘 추가</legend>
+              <div class="input-icon">
+                <h2>메모</h2>
+                <input type="text" placeholder="메모를 입력해주세요.">
+                <span class="id-icon"><img src="../../images/x_gray.svg" alt="아이콘"></span>
+              </div>
+            </fieldset>
+            <div class="registration-menu">
+              <h2>복약주기</h2>
+              <ul>
+                <li class="active">매일</li>
+                <li>특정날짜</li>
+                <li>특정요일</li>
+              </ul>
+            </div>
+
+            <div class="registration-contentwrap">
+              <ul class="registration-content-list">
+                <li class="everyday">
+                  <div class="field05">
+                    <h2>시작일</h2>
+                    <div class="choice-box">
+                      <div>
+                        <div class="field05-left">
+                          <h4>2025년</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                      </div>
+                      
+                      <div class="field05-right">
+                        <div>
+                          <h4>8월</h4><img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        <div>
+                          <h4>18일</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                      
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="field05">
+                    <h2>종료일</h2>
+                    <div class="choice-box">
+                      <div>
+                        <div class="field05-left">
+                          <h4>2025년</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                      </div>
+                      
+                      <div class="field05-right">
+                        <div>
+                          <h4>8월</h4><img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        <div>
+                          <h4>18일</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <fieldset class="field06">
+                      <legend>인풋박스 아이콘 추가</legend>
+                      <input type="checkbox" id="check01"><label for="check01">날짜 지정 안함</label>
+                    </fieldset>
+                  
+                    
+                    
+                  </div>
+                  <div class="alert-set">
+                    <h2>알람시간</h2>
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+                   <div class="alert-set alert02">
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                   
+                  </div>
+             
+                </li>
+                <li class="specific-date">
+                
+                  <div class="field05">
+                    <h2>날짜</h2>
+                    <div class="choice-box">
+                      <div>
+                        <div class="field05-left">
+                          <h4>2025년</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                      </div>
+                      
+                      <div class="field05-right">
+                        <div>
+                          <h4>8월</h4><img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        <div>
+                          <h4>18일</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <fieldset class="field06">
+                      <legend>인풋박스 아이콘 추가</legend>
+                      <input type="checkbox" id="check01" ><label for="check01">날짜 지정 안함</label>
+                    </fieldset>
+                  
+                    
+                    
+                  </div>
+                  <div class="alert-set">
+                    <h2>알람시간</h2>
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                   
+                  </div>
+                   <div class="alert-set alert02">
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                   
+                  </div>
+                </li>
+                <li class="specific-day">
+                  <fieldset class="field07 ">
+                    <ul class="specific-cal">
+                      <li><input type="checkbox" id="mon" name="day"><label for="mon">월</label></li>
+                      <li><input type="checkbox" id="tue" name="day"><label for="tue">화</label></li>
+                      <li><input type="checkbox" id="wed" name="day"><label for="wed">수</label></li>
+                      <li><input type="checkbox" id="thu" name="day"><label for="thu">목</label></li>
+                      <li><input type="checkbox" id="fri" name="day"><label for="fri">금</label></li>
+                      <li><input type="checkbox" id="sat" name="day"><label for="sat">토</label></li>
+                      <li><input type="checkbox" id="sun" name="day"><label for="sun">일</label></li>
+
+                    </ul>
+                  </fieldset>
+                  
+
+
+
+                  <div class="field05">
+                    <h2>시작일</h2>
+                    <div class="choice-box">
+                      <div>
+                        <div class="field05-left">
+                          <h4>2025년</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                      </div>
+                      
+                      <div class="field05-right">
+                        <div>
+                          <h4>8월</h4><img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        <div>
+                          <h4>18일</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                      
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="field05">
+                    <h2>종료일</h2>
+                    <div class="choice-box">
+                      <div>
+                        <div class="field05-left">
+                          <h4>2025년</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                      </div>
+                      
+                      <div class="field05-right">
+                        <div>
+                          <h4>8월</h4><img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        <div>
+                          <h4>18일</h4>
+                          <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <fieldset class="field06">
+                      <legend>인풋박스 아이콘 추가</legend>
+                      <input type="checkbox" id="check01" ><label for="check01">날짜 지정 안함</label>
+                    </fieldset>
+                  
+                    
+                    
+                  </div>
+                  <div class="alert-set">
+                    <h2>알람시간</h2>
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                   
+                  </div>
+                  <div class="alert-set alert02">
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                   
+                  </div>
+
+
+                </li>
+              </ul>
+              
+            </div><!--.routine-contentwrap--> 
+
+
+
+
+
+
+
+           
+          </form>
+        </div><!--.field-area-->
+        <button type="button" class="btn-big-01 btn-registration back">등록</button>
+      </div><!--.inner-->
+      <div class="modal-wrap bottom-modal btn-year">
+        <div class="modal-box">
+          <div class="modal-inner">
+            <div class="box">
+              <div class="sel inner">
+                <div class="swiper-container">
+                  <ul class="swiper-wrapper year-list">
+                    <li class="swiper-slide"><h6>1936년</h6></li>
+                    <li class="swiper-slide"><h6>1937년</h6></li>  
+                    <li class="swiper-slide"><h6>1938년</h6></li>
+                    <li class="swiper-slide"><h6>1939년</h6></li>  
+                    <li class="swiper-slide"><h6>1940년</h6></li>
+                    <li class="swiper-slide"><h6>1941년</h6></li>  
+                    <li class="swiper-slide"><h6>1942년</h6></li>
+                    <li class="swiper-slide"><h6>1943년</h6></li>  
+                  </ul>
+                </div>
+              </div>
+            </div><!--box-->
+              
+            <button type="button" class="btn-big-01 undo">확인</button>
+            
+          </div><!--.modal-inner-->
+          <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
+        </div>
+      </div><!--.modal-wrap-->
+      
+      <div class="modal-wrap center-modal registration01">
+        <div class="modal-box">
+          <div class="modal-inner">
+            <div class="icon-box">
+              <img src="../../images/mypage/full-checked-blue.svg" alt="구독권">
+            </div>
+            <h5>일정이 등록되었습니다.</h5>
+            <a href="mypage09.html"><button type="button" class="btn-big-01">확인</button></a>
+              
+          </div><!--.modal-inner-->
+          <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
+        </div>
+      </div><!--.modal-wrap-->
+    </div><!--.cont-layout-->
+
+  </div><!--#wrap-->
+</body>
+</html> 
