@@ -8,41 +8,59 @@ $(document).ready(function(){//start
 
   //로그아웃 모달
   $(".content-mypage-main .my-logout").click(function(){
-    $(".btn-logout").fadeIn();
+    $(".modal-wrap").css("display","flex");
   });
-  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo, .modal-wrap .modal-box .btn-cancel").click(function(){
+  $(".modal-wrap .btn-close, .modal-wrap .undo, .modal-wrap .btn-cancel").click(function(){
     $(".modal-wrap").fadeOut();
   });
 
 
   //대상자 수정 모달(1940년)
-  $(".content-mypage-sub-02 .field05-left").click(function(){
-    $(".btn-birth").fadeIn();
-  });        
+
+   $(".content-mypage-sub-02 .field05-left").click(function(){
+    $(".modal-wrap").css("display","flex");
+  });   
+
+
   //구독권 등록 모달
-  $(".subscription-plus").click(function(){
-    $(".modal-subscription01").fadeIn();
-  });
+ $(".subscription-plus").click(function(){
+    $(".modal-subscription01").css("display","flex");
+  });   
+$(".modal-subscription01").click(function(){
+    $(".modal-subscription02").css("display","flex");
+  });  
+
+
   $(".modal-wrap .modal-box .btn-close").click(function(){
     $(".modal-subscription01").fadeOut();
   });
+
+
+
    $(".modal-wrap .subscription-btn").click(function(){
     $(".modal-subscription01").fadeOut();
     $(".modal-subscription02").fadeIn();
   });
 
+
+
   //일정등록 모달
- $(".registration .field05-left").click(function(){
-    $(".btn-year").fadeIn();
-  });
-  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo").click(function(){
-    $(".modal-wrap").fadeOut();
-  });
+
+$(".registration .field05-left").click(function(){
+    $(".btn-year").css("display","flex");
+  });  
+
+
+
+
 
 
  $(".btn-registration").click(function(){
     $(".registration01").fadeIn();
   });
+
+
+
   $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo").click(function(){
     $(".modal-wrap").fadeOut();
   });

@@ -273,12 +273,21 @@ input[type="checkbox"]:checked + label{
 .modal-wrap {
   display: none; /* 기본 숨김 */
   justify-content: center; /* flex 정렬용 */
-  align-items: center;
+ 
   position: fixed; /* 화면 전체 덮기 용이 */
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  bottom: 0;
   background-color: rgba(0,0,0,0.5); /* 반투명 배경 */
   z-index: 9999;
   /* display: none 일 때 flex 속성도 같이 준비 */  
+}
+.center-modal{
+  align-items: center;
+}
+.bottom-modal{
+  align-items: flex-end;
 }
 .modal-wrap .modal-box{
   width: 100%;
@@ -293,10 +302,26 @@ input[type="checkbox"]:checked + label{
   padding: 5%;
   text-align: center;
 }
+/*.center-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+.center-modal .modal-box{
+  width: 320px;
+  border-radius: 20px;
+  padding-top: 40px;
+  height: auto;
+}
+.center-modal .modal-box h5{
+  margin: 20px 0 40px;
+  font-size: 1.8rem;
+}
+
 
 .modal-wrap .modal-box ul li{
   font-size: 2rem;
-  padding: 2%;
+  padding: 4px;
   cursor: pointer;
 }
 .modal-wrap .modal-box ul li.active{
@@ -351,9 +376,9 @@ input[type="checkbox"]:checked + label{
   font-size: 1.6rem;
   color: var(--grayscale-5);
   transition: all 0.5s;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .swiper-slide.swiper-slide-active{
