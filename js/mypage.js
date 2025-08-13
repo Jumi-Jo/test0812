@@ -3,7 +3,7 @@ $(document).ready(function(){//start
 
 
   //modal-wrap 사라짐
-  $(".modal-wrap").hide();
+//  $(".modal-wrap").hide();
   
 
   //로그아웃 모달
@@ -18,7 +18,7 @@ $(document).ready(function(){//start
   //대상자 수정 모달(1940년)
   $(".content-mypage-sub-02 .field05-left").click(function(){
     $(".btn-birth").fadeIn();
-  });
+  });        
   //구독권 등록 모달
   $(".subscription-plus").click(function(){
     $(".modal-subscription01").fadeIn();

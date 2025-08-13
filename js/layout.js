@@ -12,6 +12,10 @@ $(document).ready(function(){//start
         input.focus();
       }
     });
+    
+    
+    
+    
     //modal-wrap 사라짐
 
     $(".gnb .gnb-list ul").click(function(){

@@ -254,7 +254,10 @@ input[type="checkbox"]:checked + label{
 
 
 /*모달*/
-.modal-wrap{
+/* .modal-wrap{
+  display: none;
+}
+.modal-wrap.active{
   position: fixed;
   top: 0;
   left: 0;
@@ -264,7 +267,18 @@ input[type="checkbox"]:checked + label{
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  z-index: 998;
+  z-index: 998; 
+} */
+
+.modal-wrap {
+  display: none; /* 기본 숨김 */
+  justify-content: center; /* flex 정렬용 */
+  align-items: center;
+  position: fixed; /* 화면 전체 덮기 용이 */
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* 반투명 배경 */
+  z-index: 9999;
+  /* display: none 일 때 flex 속성도 같이 준비 */  
 }
 .modal-wrap .modal-box{
   width: 100%;

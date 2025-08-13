@@ -1,0 +1,147 @@
+@charset "utf-8";
+:root{
+  --main-font : "pretendard", sans-serif;
+  --main-1 : #5B9CFF;
+  --main-2 : #84AFFF;
+  --main-3 : #A9C7FF;
+  --main-4 : #CEE2FF;
+  --main-5 : #E0EBFF;
+  --main-6 : #EFF8FF;
+  --grayscale-1 : #101010;
+  --grayscale-2 : #252525;
+  --grayscale-3 : #454545;
+  --grayscale-4 : #5D5F62;
+  --grayscale-5 : #83878B;
+  --grayscale-6 : #9CA2A8;
+  --grayscale-7 : #BAC0C5;
+  --grayscale-8 : #D5D9DD;
+  --grayscale-9 : #E5EAEF;
+  --grayscale-10 : #F0F3F6;
+  --white : #fff;
+  --mainfont-color: #2079ff;
+  --bg-color : #F6FAFD;
+  --main-gradi : linear-gradient(90deg,rgba(124, 176, 255, 1) 0%, rgba(87, 154, 255, 1) 100%);
+}
+
+   /*access*/
+.toggle-box{
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+}
+.toggle-left{
+  width: 80%;
+}
+.toggle-left h3{
+  font-size: 1.8rem;
+}
+/*.toggle-right{
+  width: 20%;
+  text-align: right;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}*/
+.toggle-right {
+  width: auto;  /* 고정 너비 대신 내용에 맞게 */
+  min-width: 80px; /* 필요시 최소 너비 지정 */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding-right: 12px;
+}
+/* check box - switch */
+.switch{
+  display:inline-block;
+  position:relative;
+  width:40px;
+  height:20px;
+  cursor: pointer;
+}
+.switch input{
+  position:absolute;
+  opacity:0;
+}
+.switch .slider{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#eaeaea;
+  border:3px solid #eaeaea;
+  border-radius:11px;
+  transition:0.4s;
+}
+.switch .slider:before{
+  display:block;
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:14px;
+  height:14px;
+  background-color:#fff;
+  border-radius:50%;
+  box-sizing:border-box;
+  transition:0.4s;
+}
+
+.switch input:checked + .slider{
+  border-color: var(--main-1);
+  background-color:var(--main-1);
+}
+.switch input:checked + .slider:before{
+  border-color: var(--main-1);
+  transform:translateX(17px);
+}
+
+.switch input:disabled + .slider{
+  background:#f5f5f5;
+  border-color:#e2e2e2;
+}
+.switch input:disabled + .slider:before{
+  background:#f5f5f5;
+  border-color:#d5d5d5;
+}
+.switch input:checked:disabled + .slider{
+  background: var(--main-5);
+  border-color:var(--main-5);
+}
+.switch input:checked:disabled + .slider:before{
+  background: var(--main-5);
+  border-color: var(--main-5);
+}
+
+
+/* large-mode 체크 시 모든 toggle-box 스타일 변경 */
+.large-mode:checked ~ ul .toggle-box {
+  padding: 28px 24px;
+}
+
+.large-mode:checked ~ ul .toggle-box .toggle-left h3 {
+  font-size: 2.4rem;
+}
+   
+
+.toggle-status {
+  display: inline-block;
+  width: 30px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--grayscale-6);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;     /* 줄바꿈 방지 */
+  line-height: 1;          /* 줄높이 줄이기 */
+}
+/* 체크 시 글자 오른쪽으로 이동
+input[type="checkbox"]:checked ~ .toggle-status {
+  color: var(--main-1);
+} */
